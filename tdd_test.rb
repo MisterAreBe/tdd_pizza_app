@@ -28,7 +28,7 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_for_meat_value
-        assert_equal(4, get_meat().length)
+        assert_equal("Pepperoni", get_meat()[0])
     end
 
 

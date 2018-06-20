@@ -3,6 +3,6 @@ def get_size()
 end
 
 def get_meat()
-    []
+    ["Pepperoni", "Sausage", "Bacon", "Ham"]
 end
 
