@@ -13,3 +13,7 @@ end
 def get_sauce()
     ["Marinara", "Barbecue", "Garlic Butter"]
 end
+
+def get_crust()
+    []
+end
