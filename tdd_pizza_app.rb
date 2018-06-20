@@ -7,5 +7,6 @@ def get_meat()
 end
 
 def get_veggie()
-    []
+    ["Onions", "Banna Peppers", "Olives", "Mushrooms"]
 end
+
