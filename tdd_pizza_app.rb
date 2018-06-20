@@ -11,5 +11,5 @@ def get_veggie()
 end
 
 def get_sauce()
-    []
+    ["Marinara", "Barbecue", "Garlic Butter"]
 end
