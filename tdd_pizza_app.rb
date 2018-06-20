@@ -18,3 +18,6 @@ def get_crust()
     ["Pan", "Stuffed Crust", "Thin Crust", "Deep Dish"]
 end
 
+def make_pizza(size)
+    get_size()[size]
+end
