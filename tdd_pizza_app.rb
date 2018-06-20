@@ -10,3 +10,6 @@ def get_veggie()
     ["Onions", "Banna Peppers", "Olives", "Mushrooms"]
 end
 
+def get_sauce()
+    []
+end
