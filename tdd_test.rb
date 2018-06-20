@@ -51,6 +51,8 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(Array, get_crust().class)
     end
 
-    
+    def test_for_crust_value
+        assert_equal("Pan", get_crust()[0])
+    end
 
 end
