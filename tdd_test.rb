@@ -7,4 +7,7 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(1, 1)
     end
 
+    def test_for_hash
+        assert_equal(Hash, get_order().class)
+    end
 end
