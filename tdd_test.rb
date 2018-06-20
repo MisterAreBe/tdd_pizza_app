@@ -42,6 +42,11 @@ class TestTddPizzaApp < Minitest::Test
     def test_for_sauce_is_array
         assert_equal(Array, get_sauce().class)
     end
+
+    def test_for_sauce_value
+        assert_equal("Marinara", get_sauce()[0])
+    end
+
     
 
 end
