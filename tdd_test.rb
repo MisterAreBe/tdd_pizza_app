@@ -47,6 +47,10 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal("Marinara", get_sauce()[0])
     end
 
+    def test_for_crust_is_array
+        assert_equal(Array, get_crust().class)
+    end
+
     
 
 end
