@@ -6,3 +6,6 @@ def get_meat()
     ["Pepperoni", "Sausage", "Bacon", "Ham"]
 end
 
+def get_veggie()
+    []
+end
