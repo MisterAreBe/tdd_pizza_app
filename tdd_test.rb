@@ -19,4 +19,12 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(10.00, get_order()["16 inch"])
     end
 
+    def test_for_32_inch
+        assert_equal(13.00, get_order()["32 inch"])
+    end
+
+
+
+
+    
 end
