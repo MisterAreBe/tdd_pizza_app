@@ -55,4 +55,9 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal("Pan", get_crust()[0])
     end
 
+    def test_for_8_inch_pepperoni_pizza
+        assert_equal(7.00 , make_pizza(["8 inch"], [0]))
+    end
+
+
 end
