@@ -8,23 +8,26 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_for_hash
-        assert_equal(Hash, get_order().class)
+        assert_equal(Hash, get_size().class)
     end
 
     def test_for_8_inch
-        assert_equal(7.00, get_order()["8 inch"])
+        assert_equal(7.00, get_size()["8 inch"])
     end
 
     def test_for_16_inch
-        assert_equal(10.00, get_order()["16 inch"])
+        assert_equal(10.00, get_size()["16 inch"])
     end
 
     def test_for_32_inch
-        assert_equal(13.00, get_order()["32 inch"])
+        assert_equal(13.00, get_size()["32 inch"])
+    end
+
+    def test_for_meat_is_array
+        assert_equal(Array, get_meat().class)
     end
 
 
 
 
-    
 end
