@@ -80,6 +80,14 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(13.25, make_pizza("32 inch", [], [0]))
     end
 
+    def test_16_inch_banna_peppers_pepperoni_mushrooms_bacon_pizza
+        assert_equal(11.50, make_pizza("16 inch", [0, 2], [1, 3]))
+    end
+
+
+
+    
+
 
 
 end
