@@ -93,9 +93,12 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_16_inch_pepperoni_onions_marinara_pan_pizza
-        assert_equal(8.85, make_pizza("16 inch", [0], [0], [0], [0]))
+        assert_equal(11.85, make_pizza("16 inch", [0], [0], [0], [0]))
     end
 
+    def test_blank_pizza
+        assert_equal("No pizza", make_pizza("", [], [], [], []))
+    end
 
 
 end
