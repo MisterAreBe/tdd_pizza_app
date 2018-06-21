@@ -18,6 +18,11 @@ def get_crust()
     ["Pan", "Stuffed Crust", "Thin Crust", "Deep Dish"]
 end
 
-def make_pizza(size)
+def make_pizza(size, meat)
     get_size()[size]
+    price = get_size()[size]
+    meat.each do
+        price += 0.50
+    end
+    price
 end
