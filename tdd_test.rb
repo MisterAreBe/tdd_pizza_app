@@ -56,19 +56,21 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_for_8_inch_pizza
-        assert_equal(7.00 , make_pizza("8 inch"))
+        assert_equal(7.00 , make_pizza("8 inch", []))
     end
 
     def test_for_other_size_pizza
-        assert_equal(10.00, make_pizza("16 inch"))
-        assert_equal(13.00, make_pizza("32 inch"))
+        assert_equal(10.00, make_pizza("16 inch", []))
+        assert_equal(13.00, make_pizza("32 inch", []))
     end
 
     def test_meat_class_array
         assert_equal(Array, get_meat().class)
     end
 
-
+    def test_8_inch_pepperoni_pizza
+        assert_equal(7.50, make_pizza("8 inch", [0]))
+    end
 
 
 
