@@ -64,6 +64,9 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(13.00, make_pizza("32 inch"))
     end
 
+    def test_meat_class_array
+        assert_equal(Array, get_meat().class)
+    end
 
 
 
