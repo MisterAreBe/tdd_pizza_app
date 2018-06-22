@@ -115,4 +115,10 @@ class TestTddPizzaApp < Minitest::Test
     def test_16_inch_pepperoni_bacon_pizza_returns_string_of_pizza_name
         assert_equal("Enjoy your 16 inch, Pepperoni, Bacon Pizza", pizza_order("16 inch", [0, 2], [], [], []))
     end
+
+    def test_32_inch_banna_peppers_pizza_returns_correct_string
+        assert_equal("Enjoy your 32 inch, Banna Peppers Pizza", pizza_order("32 inch", [], [1], [], []))
+    end
+
+    
 end
