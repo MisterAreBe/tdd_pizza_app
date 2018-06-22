@@ -19,25 +19,27 @@ def get_crust()
 end
 
 def make_pizza(size, meat, veggie, sauce, crust)
-    get_size()[size]
+    if get_size().has_key?(size)
+        price = get_size()[size]
 
-    price = get_size()[size]
+        meat.each do
+            price += 0.50
+        end
 
-    meat.each do
-        price += 0.50
+        veggie.each do
+            price += 0.25
+        end
+
+        sauce.each do
+            price += 0.10
+        end
+
+        crust.each do
+            price += 1.00
+        end
+    else
+        return 0
     end
 
-    veggie.each do
-        price += 0.25
-    end
-
-    sauce.each do
-        price += 0.10
-    end
-
-    crust.each do
-        price += 1.00
-    end
-    
     price
 end
