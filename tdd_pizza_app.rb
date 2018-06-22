@@ -32,3 +32,7 @@ def make_pizza(size, meat, veggie, sauce, crust)
     else; return 0; end
     price
 end
+
+def pizza_order(size, meat, veggie, sauce, crust)
+    return "No pizza"
+end
