@@ -42,6 +42,6 @@ def pizza_order(size, meat, veggie, sauce, crust)
     
     
     
-    order = "#{size_order} pizza"
+    order = "#{size_order} Pizza"
     order
 end
