@@ -30,6 +30,5 @@ def make_pizza(size, meat, veggie, sauce, crust)
 
         crust.each do; price += 1.00; end
     else; return 0; end
-
     price
 end

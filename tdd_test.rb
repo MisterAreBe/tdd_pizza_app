@@ -100,5 +100,8 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal(0, make_pizza("", [], [], [], []))
     end
 
+    def test_blank_pizza_returns_no_pizza
+        assert_equal("No pizza", pizza_order("", [], [], [], []))
+    end
 
 end
