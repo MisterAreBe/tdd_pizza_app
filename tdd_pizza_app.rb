@@ -34,5 +34,14 @@ def make_pizza(size, meat, veggie, sauce, crust)
 end
 
 def pizza_order(size, meat, veggie, sauce, crust)
-    return "No pizza"
+    if get_size().has_key?(size)
+        size_order = size
+    else
+        size_order = "No"
+    end
+    
+    
+    
+    order = "#{size_order} pizza"
+    order
 end
