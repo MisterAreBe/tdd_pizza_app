@@ -105,14 +105,14 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_8_inch_pizza_returns_8_inch_pizza
-        assert_equal("8 inch Pizza", pizza_order("8 inch", [], [], [], []))
+        assert_equal("Enjoy your 8 inch Pizza", pizza_order("8 inch", [], [], [], []))
     end
 
     def test_8_inch_pepperoni_pizza_returns_8_inch_pepperoni_pizza
-        assert_equal("8 inch, Pepperoni Pizza", pizza_order("8 inch", [0], [], [], [0]))
+        assert_equal("Enjoy your 8 inch, Pepperoni Pizza", pizza_order("8 inch", [0], [], [], [0]))
     end
 
     def test_16_inch_pepperoni_bacon_pizza_returns_string_of_pizza_name
-        assert_equal("Enjoy your, 16 inch, Pepperoni, Bacon, Pizza", pizza_order("16 inch", [0, 2], [], [], []))
+        assert_equal("Enjoy your 16 inch, Pepperoni, Bacon Pizza", pizza_order("16 inch", [0, 2], [], [], []))
     end
 end
