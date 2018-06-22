@@ -128,7 +128,7 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal("Enjoy your 8 inch, Barbecue sauce Pizza", pizza_order("8 inch", [], [], [1], []))
     end
 
-    
+
 
 
 end

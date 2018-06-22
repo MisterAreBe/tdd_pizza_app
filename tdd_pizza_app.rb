@@ -47,6 +47,15 @@ def pizza_order(size, meat, veggie, sauce, crust)
             veggie_order += ", #{get_veggie()[i]}"
         end
 
+        sauce_order = ""
+        sauce.each do |i|
+            sauce_order += ", #{get_sauce()[i]}"
+            unless sauce_order.length <= 8
+                sauce_order += " sauce"
+            end
+        end
+
+        
         start_order = "Enjoy your "
     else
         size_order = "No"
@@ -55,6 +64,6 @@ def pizza_order(size, meat, veggie, sauce, crust)
 
     
     
-    order = "#{start_order}#{size_order}#{meat_order}#{veggie_order} Pizza"
+    order = "#{start_order}#{size_order}#{meat_order}#{veggie_order}#{sauce_order} Pizza"
     order
 end
