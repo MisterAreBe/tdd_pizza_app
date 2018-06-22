@@ -36,12 +36,17 @@ end
 def pizza_order(size, meat, veggie, sauce, crust)
     if get_size().has_key?(size)
         size_order = size
+        meat_order = ""
+        meat.each do |i|
+            meat_order = ", #{get_meat()[i]}"
+        end
     else
         size_order = "No"
     end
     
+
     
     
-    order = "#{size_order} Pizza"
+    order = "#{size_order}#{meat_order} Pizza"
     order
 end
