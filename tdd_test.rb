@@ -104,4 +104,8 @@ class TestTddPizzaApp < Minitest::Test
         assert_equal("No pizza", pizza_order("", [], [], [], []))
     end
 
+    def test_8_inch_pizza_returns_8_inch_pizza
+        assert_equal("8 inch pizza", pizza_order("", [], [], [], []))
+    end
+
 end
