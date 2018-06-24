@@ -15,7 +15,7 @@ def get_sauce()
 end
 
 def get_crust()
-    ["Pan", "Stuffed Crust", "Thin Crust", "Deep Dish"]
+    {"pan" => "Pan", "stuffed crust" => "Stuffed Crust", "thin crust" => "Thin Crust", "deep dish" => "Deep Dish"}
 end
 
 def make_pizza(size, meat, veggie, sauce, crust)
@@ -55,15 +55,17 @@ def pizza_order(size, meat, veggie, sauce, crust)
             end
         end
 
+        unless get_crust().has_key?(crust)
+            crust_order = ""
+        else
+            crust_order = ", #{get_crust()[crust]}"
+        end
         
         start_order = "Enjoy your "
     else
         size_order = "No"
     end
     
-
-    
-    
-    order = "#{start_order}#{size_order}#{meat_order}#{veggie_order}#{sauce_order} Pizza"
+    order = "#{start_order}#{size_order}#{meat_order}#{veggie_order}#{sauce_order}#{crust_order} Pizza"
     order
 end

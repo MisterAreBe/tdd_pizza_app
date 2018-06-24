@@ -48,11 +48,11 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_for_crust_is_array
-        assert_equal(Array, get_crust().class)
+        assert_equal(Hash, get_crust().class)
     end
 
     def test_for_crust_value
-        assert_equal("Pan", get_crust()[0])
+        assert_equal("Pan", get_crust()["pan"])
     end
 
     def test_for_8_inch_pizza
@@ -133,7 +133,7 @@ class TestTddPizzaApp < Minitest::Test
     end
 
     def test_16_inch_pan_pizza_returns_correct_string
-        assert_equal("Enjoy your 16 inch, Pan Pizza", pizza_order("16 inch", [], [], [], [0]))
+        assert_equal("Enjoy your 16 inch, Pan Pizza", pizza_order("16 inch", [], [], [], "pan"))
     end
-    
+
 end
